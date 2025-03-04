@@ -440,6 +440,26 @@ class PeakPower30s : public PeakPower {
         RideMetric *clone() const { return new PeakPower30s(*this); }
 };
 
+class PeakPower40s : public PeakPower {
+    Q_DECLARE_TR_FUNCTIONS(PeakPower40s)
+    public:
+        PeakPower40s()
+        {
+            setSecs(40);
+            setSymbol("40s_critical_power");
+            setInternalName("40 sec Peak Power");
+        }
+        void initialize () {
+            setName(tr("40 sec Peak Power"));
+            setMetricUnits(tr("watts"));
+            setImperialUnits(tr("watts"));
+        }
+    MetricClass classification() const { return Undefined; }
+    MetricValidity validity() const { return Unknown; }
+        RideMetric *clone() const { return new PeakPower40s(*this); }
+};
+
+
 class PeakPower1m : public PeakPower {
     Q_DECLARE_TR_FUNCTIONS(PeakPower1m)
     public:
