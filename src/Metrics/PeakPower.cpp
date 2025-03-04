@@ -827,6 +827,7 @@ static bool addAllPeaks() {
     RideMetricFactory::instance().addMetric(PeakPower15s());
     RideMetricFactory::instance().addMetric(PeakPower20s());
     RideMetricFactory::instance().addMetric(PeakPower30s());
+    RideMetricFactory::instance().addMetric(PeakPower40s());
     RideMetricFactory::instance().addMetric(PeakPower1m());
     RideMetricFactory::instance().addMetric(PeakPower2m());
     RideMetricFactory::instance().addMetric(PeakPower3m());
